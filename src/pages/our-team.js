@@ -29,19 +29,11 @@ const Team = ({ data }) => {
           style={{ padding: "0" }}
         >
           <header
-            className={
-              `entry-header has-text-align-center header-footer-group ` +
-              (pageHeaderImages.primaryImage !== null
-                ? "negmargin"
-                : "nomargin")
-            }
+            className={`entry-header has-text-align-center header-footer-group `}
           >
             <div className="header-inner section-inner" style={{}}>
               <h1
-                className={
-                  `entry-title ` +
-                  (pageHeaderImages.textColor !== null ? "textColor" : "")
-                }
+                className={`entry-title `}
                 dangerouslySetInnerHTML={{ __html: "Our Team" }}
               />
             </div>
