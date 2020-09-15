@@ -974,7 +974,7 @@ section {
 .section-inner {
   margin-right: auto;
   margin-left: auto;
-  max-width: 120rem;
+  max-width: 1040px;
   width: calc(100% - 4rem);
 }
 
@@ -2257,7 +2257,7 @@ body.template-full-width
 body.template-full-width
   [class*="__inner-container"]
   > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
-  max-width: 120rem;
+  max-width: 1040px;
 }
 
 body.template-full-width .entry-content .alignleft,
@@ -3592,7 +3592,7 @@ figure.wp-block-table.is-style-stripes {
 /* Wide */
 
 .alignwide {
-  max-width: 120rem;
+  max-width: 1040px;
   position: relative;
   width: calc(100% - 4rem);
 }
@@ -6337,7 +6337,7 @@ a.to-the-top > * {
   /* BLOCK: SEPARATOR */
 
   .wp-block-separator.is-style-wide {
-    max-width: 120rem;
+    max-width: 1040px;
     width: 120rem;
   }
 
@@ -6360,12 +6360,12 @@ a.to-the-top > * {
   }
 
   .entry-content > .alignwide {
-    max-width: 120rem;
+    max-width: 1040px;
     width: 120rem;
   }
 
   [class*="__inner-container"] > .alignwide {
-    max-width: 120rem;
+    max-width: 1040px;
     width: 100%;
   }
 

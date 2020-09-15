@@ -63,7 +63,7 @@ const Div2 = styled.div`
   padding: 0rem 0;
   @media (min-width: 768px) {
     flex-direction: row;
-    padding: 4rem 0;
+    padding: 0rem 0;
   }
 `
 
@@ -80,16 +80,32 @@ export default function BigFooter() {
       <Div>
         <div className="item">
           <h5>Vote KerryJo Felder for Minneapolis School Board</h5>
-          <p style={{ fontSize: "1.5rem", textAlign: "left" }}>
+          <p style={{ fontSize: "1.75rem", textAlign: "left" }}>
             Kerry Jo is a MPS parent who believes the district belongs to its
             parents and students. She will work hard to lift your voice in
             creating solutions that address local disparities and make schools
             you are proud to call your own.
           </p>
+          <Link
+            to="/about/"
+            style={{
+              fontSize: "1.5rem",
+              background: "#333",
+              padding: "10px 15px",
+              float: "left",
+              marginTop: "-5px",
+            }}
+          >
+            Learn more about KerryJo &rarr;
+          </Link>
         </div>
         <div className="item">
           <div className="footer-column footerSignupDiv">
             <h5>Sign up for Updates</h5>
+            <p style={{ fontSize: "1.75rem", textAlign: "left" }}>
+              Sign up to receive the latest news and important updates from our
+              campaign.
+            </p>
             <Mailchimp
               action="https://saintpaulpromiseneighborhood.us16.list-manage.com/subscribe/post?u=XXXXXXXXXXXXX&amp;id=XXXXXX"
               //Adding multiple fields:
@@ -117,10 +133,17 @@ export default function BigFooter() {
         </div>
       </Div>
       <Div2>
-        <div className="footer-column footerSocial">
-          <h4 className="footerMenu">Follow Us</h4>
-          <SocialMenu isExpanded />
-        </div>
+        <span
+          style={{
+            border: "1px solid #333",
+            fontSize: "1.25rem",
+            padding: "1rem 2rem",
+            marginBottom: "3rem",
+            textAlign: "center",
+          }}
+        >
+          Prepared and paid for by the KerryJo 4 School Board Campaign
+        </span>
       </Div2>
     </Wrapper>
   )

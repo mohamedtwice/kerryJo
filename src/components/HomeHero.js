@@ -23,6 +23,19 @@ const Wrapper = styled.div`
   }
 `
 
+const H2 = styled.h2`
+  color: white;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 3em;
+  text-shadow: 1px 1px 1px #fdcb00;
+  @media (min-width: 500px) {
+    width: 50%;
+  }
+  @media (min-width: 768px) {
+  }
+`
+
 const BackgroundSection = ({ className }) => {
   const data = useStaticQuery(
     graphql`
@@ -59,6 +72,10 @@ const BackgroundSection = ({ className }) => {
   const imageData =
     data.wpPage.homeHero.backgroundImage.remoteFile.childImageSharp.fluid
 
+  const heroTitle = data.wpPage.homeHero.heroText
+
+  const buttons = data.wpPage.homeHero.buttons
+
   return (
     <Wrapper>
       <BackgroundImage
@@ -66,8 +83,10 @@ const BackgroundSection = ({ className }) => {
         className={className}
         fluid={imageData}
         backgroundColor={`#040e18`}
+        style={{ display: "flex", alignItems: "center" }}
       >
         {/* <h2>gatsby-background-image</h2> */}
+        <H2>{heroTitle}</H2>
       </BackgroundImage>
     </Wrapper>
   )

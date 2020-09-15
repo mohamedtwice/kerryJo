@@ -1,17 +1,48 @@
 import React from "react"
 import { Link } from "gatsby"
 import moment from "moment"
+import SocialMenu from "./SocialMenu"
+import styled from "styled-components"
+
+const Wrapper = styled.div`
+    max-width: 1140px;
+    margin: auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-flow: column-reverse;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: 990px) {
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    }
+  }
+`
+
+const WrapDiv = styled.div`
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: 990px) {
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    }
+  }
+`
 
 const Footer = ({}) => {
   return (
     <footer id="site-footer" role="contentinfo" className="header-footer-group">
-      <div className="section-inner e40">
-        <div className="footer-credits">
+      <Wrapper>
+        <WrapDiv>
           <p className="footer-copyright">
-            © {moment().format("YYYY")}{" "}
+            Copyright © {moment().format("YYYY")}{" "}
             <Link to={"/"}> KerryJo Felder for Minneapolis School Board</Link>
           </p>
-          <p>
+          <p style={{ margin: "0" }}>
             <a
               className="powered-by-wordpress"
               href="http://www.bsmg.co"
@@ -20,6 +51,11 @@ const Footer = ({}) => {
               Powered by BSMG Digital
             </a>
           </p>
+        </WrapDiv>
+
+        <div className="footer-column" style={{ marginBottom: "1.25rem" }}>
+          {/* <h4 className="footerMenu">Follow Us</h4> */}
+          <SocialMenu isExpanded />
         </div>
 
         {/* <a className="to-the-top" href="#site-header">
@@ -36,7 +72,7 @@ const Footer = ({}) => {
             </span>
           </span>
         </a> */}
-      </div>
+      </Wrapper>
     </footer>
   )
 }

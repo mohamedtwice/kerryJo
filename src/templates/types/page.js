@@ -71,7 +71,7 @@ export default ({ data }) => {
           </header>
 
           {/*<header className="entry-header has-text-align-center header-footer-group" style={{ padding: "4erm 0",background: "#E5A342", display: "flex", flexDirection: "row", alignContent: "flex-start" }}>*/}
-          {/*    <div className="entry-header-inner section-inner e40">*/}
+          {/*    <div className="entry-header-inner section-inner">*/}
           {/*        <h1 style={{ color: "#fff", display:"flex", justifyContent: "flex-start"}} dangerouslySetInnerHTML={{ __html: title }}*/}
           {/*            />*/}
           {/*    </div>*/}
@@ -79,7 +79,7 @@ export default ({ data }) => {
 
           <div className="post-inner thin pf">
             <div
-              className="entry-content e40"
+              className="entry-content"
               dangerouslySetInnerHTML={{ __html: content }}
             />
           </div>

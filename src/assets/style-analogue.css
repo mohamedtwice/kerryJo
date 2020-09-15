@@ -1840,8 +1840,8 @@ ul.team_modal_social li {
 }
 
 .blog-list .card h3 {
-  font-size: 1.05em;
-  line-height: 1.4em;
+  font-size: 1.8rem;
+  line-height: 1;
   /*height: 4.1em;*/
   overflow: hidden;
   margin: 0;
@@ -1864,7 +1864,7 @@ span.author.vcard a {
 .blog-date {
   font-weight: 400;
   color: #1b4a58;
-  font-size: 0.9em;
+  font-size: 1.5rem;
 }
 
 .entry-category {
@@ -2289,7 +2289,7 @@ ul.footer-social a:hover {
   }
 
   .entry-category a {
-    font-size: 0.9vw;
+    font-size: 1.5rem;
   }
 }
 

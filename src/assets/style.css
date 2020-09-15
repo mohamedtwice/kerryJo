@@ -126,7 +126,7 @@ body {
   background: #fff;
   box-sizing: border-box;
   color: #000;
-  font-family: itc-avant-garde-gothic-pro, sans-serif;
+  font-family: open-sans, sans-serif;
   /*font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;*/
   font-size: 1.8rem;
   letter-spacing: -0.015em;
@@ -135,7 +135,7 @@ body {
 
 @supports (font-variation-settings: normal) {
   body {
-    font-family: itc-avant-garde-gothic-pro, sans-serif;
+    font-family: open-sans, sans-serif;
     /*font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;*/
   }
 }
@@ -457,7 +457,7 @@ hr.styled-separator::after {
 }
 
 a {
-  color: #e5642b;
+  color: #fdcb00;
   text-decoration: none;
   font-weight: 600;
 }
@@ -539,7 +539,7 @@ dd + dt {
 /* Quotes ------------------------------------ */
 
 blockquote {
-  border-color: #e5642b;
+  border-color: #fdcb00;
   border-style: solid;
 
   /*rtl:ignore*/
@@ -833,7 +833,7 @@ input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: #e5642b;
+  background: #fdcb00;
   border: none;
   border-radius: 0;
   color: #fff;
@@ -986,7 +986,7 @@ section {
 .section-inner {
   margin-left: auto;
   margin-right: auto;
-  /*max-width: 120rem;*/
+  /*max-width: 1040px;*/
   max-width: 168rem;
   width: calc(100% - 4rem);
 }
@@ -1084,7 +1084,7 @@ button.toggle {
 .color-accent,
 .color-accent-hover:focus,
 .color-accent-hover:hover {
-  color: #e5642b;
+  color: #fdcb00;
 }
 
 /* BACKGROUND COLOR */
@@ -1092,7 +1092,7 @@ button.toggle {
 .bg-accent,
 .bg-accent-hover:focus,
 .bg-accent-hover:hover {
-  background-color: #e5642b;
+  background-color: #fdcb00;
 }
 
 /* BORDER COLOR */
@@ -1100,14 +1100,14 @@ button.toggle {
 .border-color-accent,
 .border-color-accent-hover:focus,
 .border-color-accent-hover:hover {
-  border-color: #e5642b;
+  border-color: #fdcb00;
 }
 
 /* FILL COLOR */
 
 .fill-children-accent,
 .fill-children-accent * {
-  fill: #e5642b;
+  fill: #fdcb00;
 }
 
 .fill-children-current-color,
@@ -2289,7 +2289,7 @@ button.search-untoggle {
 #GatsbyBody.template-full-width
   [class*="__inner-container"]
   > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
-  max-width: 120rem;
+  max-width: 1040px;
 }
 
 #GatsbyBody.template-full-width .entry-content .alignleft,
@@ -2800,11 +2800,11 @@ h2.entry-title {
 /* CUSTOM COLORS */
 
 :root .has-accent-color {
-  color: #e5642b;
+  color: #fdcb00;
 }
 
 :root .has-accent-background-color {
-  background-color: #e5642b;
+  background-color: #fdcb00;
   color: #fff;
 }
 
@@ -2860,7 +2860,7 @@ h2.entry-title {
 }
 
 .has-drop-cap:not(:focus)::first-letter {
-  color: #e5642b;
+  color: #fdcb00;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica,
     sans-serif;
   font-size: 5.1em;
@@ -3078,7 +3078,7 @@ h2.entry-title {
 }
 
 .wp-block-button.is-style-outline {
-  color: #e5642b;
+  color: #fdcb00;
 }
 
 .is-style-outline .wp-block-button__link:not(.has-text-color) {
@@ -3265,7 +3265,7 @@ figure.wp-block-gallery.alignfull {
 .wp-block-pullquote::before {
   background: #fff;
   border-radius: 50%;
-  color: #e5642b;
+  color: #fdcb00;
   content: "”";
   display: block;
   font-size: 6.2rem;
@@ -3530,7 +3530,7 @@ figure.wp-block-table.is-style-stripes {
 
 .entry-content {
   line-height: 1.5;
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 .blog-media {
@@ -3560,7 +3560,7 @@ figure.wp-block-table.is-style-stripes {
 
 .entry-content strong {
   font-weight: 700;
-  color: #fdcb00;
+  /* color: #fdcb00; */
 }
 
 .entry-content a {
@@ -3692,7 +3692,7 @@ figure.wp-block-table.is-style-stripes {
 /* Wide */
 
 .alignwide {
-  max-width: 120rem;
+  max-width: 1040px;
   position: relative;
   width: calc(100% - 4rem);
 }
@@ -3910,7 +3910,7 @@ div.comment:first-of-type {
 }
 
 .comment-reply-link {
-  background-color: #e5642b;
+  background-color: #fdcb00;
   color: #fff;
   display: block;
   padding: 0.7rem;
@@ -4515,7 +4515,7 @@ ul.footer-social li {
 }
 
 .footer-social a {
-  background-color: #e5642b;
+  background-color: #fdcb00;
   height: 3.6rem;
   width: 3.6rem;
 }
@@ -4543,7 +4543,7 @@ ul.footer-social li {
 #site-footer .section-inner {
   align-items: baseline;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 #site-footer a {
@@ -5732,7 +5732,7 @@ a.to-the-top > * {
 
   #site-footer {
     font-size: 1.8rem;
-    padding: 4.3rem 0;
+    padding: 3rem 0 0;
   }
 
   .footer-credits {
@@ -6505,7 +6505,7 @@ a.to-the-top > * {
   /* BLOCK: SEPARATOR */
 
   .wp-block-separator.is-style-wide {
-    max-width: 120rem;
+    max-width: 1040px;
     width: 120rem;
   }
 
@@ -6534,12 +6534,12 @@ a.to-the-top > * {
   }
 
   .entry-content > .alignwide {
-    max-width: 120rem;
+    max-width: 1040px;
     width: 120rem;
   }
 
   [class*="__inner-container"] > .alignwide {
-    max-width: 120rem;
+    max-width: 1040px;
     width: 100%;
   }
 
@@ -6997,10 +6997,10 @@ a.circle-icon:focus {
 
 .purple-gradient {
   background: #50219c;
-  background: -moz-linear-gradient(-45deg, #f39020 0%, #e5642b 100%);
-  background: -webkit-linear-gradient(-45deg, #f39020 0%, #e5642b 100%);
-  background: linear-gradient(135deg, #f39020 0%, #e5642b 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F39020', endColorstr='#E5642B',GradientType=1 );
+  background: -moz-linear-gradient(-45deg, #f39020 0%, #fdcb00 100%);
+  background: -webkit-linear-gradient(-45deg, #f39020 0%, #fdcb00 100%);
+  background: linear-gradient(135deg, #f39020 0%, #fdcb00 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F39020', endColorstr='#fdcb00',GradientType=1 );
 }
 
 .donate-cta-top {
@@ -7552,9 +7552,9 @@ a.circle-icon:focus {
   justify-content: center;
 }
 .footerSocial {
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 0px 0 20px;
   align-items: center;
 }
 
@@ -7613,7 +7613,7 @@ a.circle-icon:focus {
     width: 100%;
   }
   .footerSocial {
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -7681,7 +7681,9 @@ a.circle-icon:focus {
     width: 47%;
     flex-direction: column;
     justify-content: flex-start !important;
-    padding: 0 !important;
+    /* padding: 0 !important; */
+    margin: auto;
+    padding: 0px 0 20px;
   }
 }
 
