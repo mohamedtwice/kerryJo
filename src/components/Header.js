@@ -3,7 +3,7 @@ import { graphql, Link, useStaticQuery } from "gatsby"
 import Menu from "./Menu"
 import ToggleIcon from "../assets/svg/toggle.inline.svg"
 import Img from "gatsby-image"
-import logo from "../assets/images/sdslogo.png"
+import logo from "../assets/images/kerryjologo.png"
 import GoogleTranslate from "./GoogleTranslate"
 // import logo from "../assets/svg/promiseneighborhood.svg"
 
@@ -57,16 +57,16 @@ const Header = ({ pageContext, toggleBackdrop, ...props }) => {
           </button>
 
           <div className="topnavoptions">
-            <div className="topsubnavoptions">
-              {/* <div className="mtranslate">
+            {/* <div className="topsubnavoptions"> */}
+            {/* <div className="mtranslate">
                 <GoogleTranslate />
               </div> */}
-              <div className="headerdonatediv">
+            {/* <div className="headerdonatediv">
                 <a className="headerdonatebtn" href="#">
                   Make Appointment
                 </a>
-              </div>
-            </div>
+              </div> */}
+            {/* </div> */}
 
             <div className="header-navigation-wrapper">
               <Menu />

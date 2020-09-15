@@ -3,13 +3,10 @@ import { graphql } from "gatsby"
 import Layout from "../../components/Layout"
 import Seo from "../../components/Seo"
 import FeaturedMedia from "../../components/FeaturedMedia"
-import Slider from "../../components/Slider"
-import Stories from "../../components/Stories"
 import ThreeBoxes from "../../components/ThreeBoxes"
-import Challenge from "../../components/Challenge"
-import PageHeader from "../../components/PageHeader"
 // import homebanner from "../assets/images//pn-homebannerbg.png";
 import { GatsbySeo } from "gatsby-plugin-next-seo"
+import HomeHero from "../../components/HomeHero"
 
 export default ({ data }) => {
   const { page } = data
@@ -20,7 +17,6 @@ export default ({ data }) => {
     featuredImage,
     excerpt,
     databaseId,
-    pageHeaderImages,
   } = page
   // console.log(isFrontPage)
   // console.log(imgURL)
@@ -33,24 +29,8 @@ export default ({ data }) => {
             className="post-home post page type-page status-publish hentry"
             id="post-home"
           >
-            {/* <Slider />
-                <ThreeBoxes/>
-                <Challenge/>*/}
-            <div className="banner">
-              <span
-                className="background"
-                style={{
-                  color: "#FFF",
-                }}
-              ></span>
-              <div className="container e40">
-                {/* <h1>South Dallas Smiles</h1> */}
-              </div>
-            </div>
-            {/* <Stories /> */}
-            <div className="container e40">
-              <ThreeBoxes />
-            </div>
+            <HomeHero />
+            <ThreeBoxes />
           </article>
         </Layout>
       </>
@@ -79,19 +59,12 @@ export default ({ data }) => {
             <PageHeader pageHeaderImages={pageHeaderImages} />
           )} */}
           <header
-            className={
-              `entry-header has-text-align-center header-footer-group ` +
-              (pageHeaderImages.primaryImage !== null
-                ? "negmargin"
-                : "nomargin")
-            }
+            className={`entry-header has-text-align-center header-footer-group`}
+            style={{ maxWidth: "1140px", margin: "0 auto" }}
           >
             <div className="header-inner section-inner" style={{}}>
               <h1
-                className={
-                  `entry-title ` +
-                  (pageHeaderImages.textColor !== null ? "textColor" : "")
-                }
+                className={`page-title `}
                 dangerouslySetInnerHTML={{ __html: title }}
               />
             </div>

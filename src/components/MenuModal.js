@@ -7,26 +7,22 @@ import { normalizePath } from "../utils/normalize-path"
 import UniversalLink from "./UniversalLink"
 import SocialMenu from "./SocialMenu"
 
-
 const openSubnav = (e) => {
-  let el = document.querySelector('.sub-menu-toggle');
-  let dd = document.querySelector('.sub-menu');
+  let el = document.querySelector(".sub-menu-toggle")
+  let dd = document.querySelector(".sub-menu")
 
   console.log(dd)
   console.log(el)
 
   el.onclick = function () {
-    el.classList.toggle('active');
-    };
+    el.classList.toggle("active")
+  }
 
-  return console.log('HI!')
-};
-
+  return console.log("HI!")
+}
 
 const MenuModal = ({ isActive, toggleBackdrop }) => {
-
   const [visible, setVisible] = useState(false) // true is the initial state
-
 
   const { wpMenu } = useStaticQuery(graphql`
     {
@@ -49,7 +45,7 @@ const MenuModal = ({ isActive, toggleBackdrop }) => {
                 menuItemId
                 connectedObject {
                   ... on WpContentNode {
-                  uri
+                    uri
                   }
                 }
               }
@@ -58,7 +54,7 @@ const MenuModal = ({ isActive, toggleBackdrop }) => {
         }
       }
     }
-  `);
+  `)
 
   if (!wpMenu?.menuItems?.nodes || wpMenu.menuItems.nodes === 0) return null
 
@@ -100,8 +96,8 @@ const MenuModal = ({ isActive, toggleBackdrop }) => {
 
                   return (
                     <li
-                        key={itemId}
-                        id={itemId}
+                      key={itemId}
+                      id={itemId}
                       className={
                         "menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home " +
                         itemId
@@ -127,82 +123,99 @@ const MenuModal = ({ isActive, toggleBackdrop }) => {
               <ul className="modal-menu reset-list-style">
                 {wpMenu.menuItems.nodes.map((menuItem, i) => {
                   const path = normalizePath(
-                      menuItem?.connectedObject?.uri ?? menuItem.url
+                    menuItem?.connectedObject?.uri ?? menuItem.url
                   )
                   const itemId = "modal-mobile-menu-item-" + menuItem.menuItemId
-                  const hasChildren = menuItem.childItems.nodes.length > 0;
-                  const hasDiv = 'menu-item-has-children';
-
-
+                  const hasChildren = menuItem.childItems.nodes.length > 0
+                  const hasDiv = "menu-item-has-children"
 
                   return (
-                      <li
-                          key={itemId}
-                          id={itemId}
-                          className={
-                            `menu-item menu-item-type-custom menu-item-object-custom menu-item-home${hasChildren ? ' menu-item-has-children ' : ''}`+
-                            itemId
+                    <li
+                      key={itemId}
+                      id={itemId}
+                      className={
+                        `menu-item menu-item-type-custom menu-item-object-custom menu-item-home${
+                          hasChildren ? " menu-item-has-children " : ""
+                        }` + itemId
+                      }
+                    >
+                      <div className="ancestor-wrapper">
+                        <UniversalLink
+                          to={path}
+                          activeClassName={
+                            "current-menu-item current_page_item"
                           }
-                      >
-                        <div className="ancestor-wrapper">
-                          <UniversalLink
-                              to={path}
-                              activeClassName={
-                                "current-menu-item current_page_item"
-                              }
+                        >
+                          {menuItem.label}
+                        </UniversalLink>
+                        {hasChildren && (
+                          <button
+                            className="mobile-drop-arrow"
+                            onClick={(e) => setVisible(!visible)}
                           >
-                            {menuItem.label}
-                          </UniversalLink>
-                          {hasChildren &&
-                          <button onClick={(e) => setVisible(!visible)}>
-                          {/*<button id="sub-menu-toggle-id" className="toggle sub-menu-toggle fill-children-current-color">*/}
+                            {/*<button id="sub-menu-toggle-id" className="toggle sub-menu-toggle fill-children-current-color">*/}
                             {/*<a className="mobile-dropdown-arrow sub-menu-toggle" href="#!">*/}
-                            <span className="screen-reader-text">Show sub menu</span>
-                            <svg className="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12">
-                              <polygon fill="" fillRule="evenodd"
-                                       points="1319.899 365.778 1327.678 358 1329.799 360.121 1319.899 370.021 1310 360.121 1312.121 358"
-                                       transform="translate(-1310 -358)"></polygon>
+                            <span className="screen-reader-text">
+                              Show sub menu
+                            </span>
+                            <svg
+                              className="svg-icon"
+                              aria-hidden="true"
+                              role="img"
+                              focusable="false"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="20"
+                              height="12"
+                              viewBox="0 0 20 12"
+                            >
+                              <polygon
+                                fill=""
+                                fillRule="evenodd"
+                                points="1319.899 365.778 1327.678 358 1329.799 360.121 1319.899 370.021 1310 360.121 1312.121 358"
+                                transform="translate(-1310 -358)"
+                              ></polygon>
                             </svg>
                             {/*</a>*/}
                           </button>
-                          }
-                        </div>
-
-                        {hasChildren !== 0 && (
-                            <ul className={visible ? "active" : "hidden-class"}>
-                            {/*<ul className="sub-menu">*/}
-                              {menuItem.childItems.nodes.map((childItem, i) => {
-                                const path = normalizePath(
-                                    childItem?.connectedObject?.uri ?? childItem.url
-                                )
-                                const childId = "modal-menu-item-" + childItem.menuItemId
-
-                                return (
-                                    <li
-                                        key={childId}
-                                        id={childId}
-                                        className={
-                                          "menu-item menu-item-type-post_type menu-item-object-page mobile-child-menu-item " +
-                                          childId
-                                        }
-                                    >
-                                      <div className="ancestor-wrapper">
-                                        <UniversalLink
-                                            to={path}
-                                            className="mobile-child-link"
-                                            activeClassName={
-                                              "current-menu-item current_page_item"
-                                            }
-                                        >
-                                          {childItem.label}
-                                        </UniversalLink>
-                                      </div>
-                                    </li>
-                                )
-                              })}
-                            </ul>
                         )}
-                      </li>
+                      </div>
+
+                      {hasChildren !== 0 && (
+                        <ul className={visible ? "active" : "hidden-class"}>
+                          {/*<ul className="sub-menu">*/}
+                          {menuItem.childItems.nodes.map((childItem, i) => {
+                            const path = normalizePath(
+                              childItem?.connectedObject?.uri ?? childItem.url
+                            )
+                            const childId =
+                              "modal-menu-item-" + childItem.menuItemId
+
+                            return (
+                              <li
+                                key={childId}
+                                id={childId}
+                                className={
+                                  "menu-item menu-item-type-post_type menu-item-object-page mobile-child-menu-item " +
+                                  childId
+                                }
+                              >
+                                <div className="ancestor-wrapper">
+                                  <UniversalLink
+                                    to={path}
+                                    className="mobile-child-link"
+                                    activeClassName={
+                                      "current-menu-item current_page_item"
+                                    }
+                                  >
+                                    {childItem.label}
+                                  </UniversalLink>
+                                </div>
+                              </li>
+                            )
+                          })}
+                        </ul>
+                      )}
+                    </li>
                   )
                 })}
               </ul>
@@ -211,7 +224,9 @@ const MenuModal = ({ isActive, toggleBackdrop }) => {
 
           <div className="menu-middle">
             <div className="headerdonatediv2">
-              <a className="headerdonatebtn2" href="/donate/">Donate</a>
+              <a className="headerdonatebtn2" href="/donate/">
+                Donate
+              </a>
             </div>
           </div>
 
@@ -222,6 +237,6 @@ const MenuModal = ({ isActive, toggleBackdrop }) => {
       </div>
     </div>
   )
-};
+}
 
 export default MenuModal

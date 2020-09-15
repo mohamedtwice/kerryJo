@@ -23,83 +23,84 @@ const Wrapper = styled.div`
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.33);
     text-align: center;
-    H2, H3 {
+    H2,
+    H3 {
       margin: 0 36px;
     }
   }
-`;
+`
 
 export default function Slider() {
-  const data = useStaticQuery(graphql`
-    query HeaderQuery {
-      wpPage(slug: {eq: "home"}) {
-    id
-    title
-    homeSlider {
-      slides {
-        title
-        text
-        background {
-          altText
-          remoteFile {
-            childImageSharp {
-              fluid {
-                base64
-                tracedSVG
-                srcWebp
-                srcSetWebp
-                originalImg
-                originalName
-              }
-            }
-          }
-          localFile {
-            absolutePath
-            childImageSharp {
-              fluid {
-                base64
-                tracedSVG
-                srcWebp
-                srcSetWebp
-                originalImg
-                originalName
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query HeaderQuery {
+  //     wpPage(slug: {eq: "home"}) {
+  //   id
+  //   title
+  //   homeSlider {
+  //     slides {
+  //       title
+  //       text
+  //       background {
+  //         altText
+  //         remoteFile {
+  //           childImageSharp {
+  //             fluid {
+  //               base64
+  //               tracedSVG
+  //               srcWebp
+  //               srcSetWebp
+  //               originalImg
+  //               originalName
+  //             }
+  //           }
+  //         }
+  //         localFile {
+  //           absolutePath
+  //           childImageSharp {
+  //             fluid {
+  //               base64
+  //               tracedSVG
+  //               srcWebp
+  //               srcSetWebp
+  //               originalImg
+  //               originalName
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  //   }
+  // `)
 
   // console.log(data.wp.themeGeneralSettings.homeSlider)
   // console.log(data)
 
   return (
-      <HeroSlider
-          slidingAnimation="top_to_bottom"
-          orientation="horizontal"
-          initialSlide={1}
-          onBeforeChange={(previousSlide, nextSlide) =>
-              console.log("onBeforeChange", previousSlide, nextSlide)
-          }
-          onChange={nextSlide => console.log("onChange", nextSlide)}
-          onAfterChange={nextSlide => console.log("onAfterChange", nextSlide)}
-          style={{
-              color: '#FFF',
-              zIndex: '',
-              backgroundColor: "#000"
-          }}
-          settings={{
-              slidingDuration: 600,
-              slidingDelay: 100,
-              shouldAutoplay: true,
-              shouldDisplayButtons: true,
-              autoplayDuration: 5000,
-              height: "550px"
-          }}
-      >
+    <HeroSlider
+      slidingAnimation="top_to_bottom"
+      orientation="horizontal"
+      initialSlide={1}
+      onBeforeChange={(previousSlide, nextSlide) =>
+        console.log("onBeforeChange", previousSlide, nextSlide)
+      }
+      onChange={(nextSlide) => console.log("onChange", nextSlide)}
+      onAfterChange={(nextSlide) => console.log("onAfterChange", nextSlide)}
+      style={{
+        color: "#FFF",
+        zIndex: "",
+        backgroundColor: "#000",
+      }}
+      settings={{
+        slidingDuration: 600,
+        slidingDelay: 100,
+        shouldAutoplay: true,
+        shouldDisplayButtons: true,
+        autoplayDuration: 5000,
+        height: "550px",
+      }}
+    >
       {/*<HeroSlider*/}
       {/*    slidingAnimation="top_to_bottom"*/}
       {/*    orientation="horizontal"*/}
@@ -118,26 +119,24 @@ export default function Slider() {
       {/*    }}*/}
       {/*>*/}
       {data.wpPage.homeSlider.slides.map((slide, index) => {
-          const image = slide.background.localFile.childImageSharp.fluid.srcWebp
-          const imageUrl = 'https://promiseneighborhood.netlify.app/' + image
-                  console.log(imageUrl)
-          return (
-              <Slide
-                  background={{
-                      backgroundImage: imageUrl,
-                      backgroundPosition: 'center center',
-                      backgroundSize: 'cover',
-                  }}
-                  key={index}
-              >
-                  <Wrapper>
-                      <h2 className="sliderh2"> {slide.title}</h2>
-                      <h6 className="sliderh6"> {slide.text}</h6>
-                  </Wrapper>
-
-              </Slide>
-
-          )
+        const image = slide.background.localFile.childImageSharp.fluid.srcWebp
+        const imageUrl = "https://promiseneighborhood.netlify.app/" + image
+        console.log(imageUrl)
+        return (
+          <Slide
+            background={{
+              backgroundImage: imageUrl,
+              backgroundPosition: "center center",
+              backgroundSize: "cover",
+            }}
+            key={index}
+          >
+            <Wrapper>
+              <h2 className="sliderh2"> {slide.title}</h2>
+              <h6 className="sliderh6"> {slide.text}</h6>
+            </Wrapper>
+          </Slide>
+        )
       })}
 
       <SideNav

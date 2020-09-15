@@ -9,7 +9,7 @@ const Footer = ({}) => {
         <div className="footer-credits">
           <p className="footer-copyright">
             © {moment().format("YYYY")}{" "}
-            <Link to={"/"}> South Dallas Smiles Dental</Link>
+            <Link to={"/"}> KerryJo Felder for Minneapolis School Board</Link>
           </p>
           <p>
             <a
@@ -22,7 +22,7 @@ const Footer = ({}) => {
           </p>
         </div>
 
-        <a className="to-the-top" href="#site-header">
+        {/* <a className="to-the-top" href="#site-header">
           <span className="to-the-top-long">
             To the top{" "}
             <span className="arrow" aria-hidden="true">
@@ -35,7 +35,7 @@ const Footer = ({}) => {
               ↑
             </span>
           </span>
-        </a>
+        </a> */}
       </div>
     </footer>
   )

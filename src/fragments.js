@@ -92,48 +92,6 @@ export const fragments = graphql`
     title
     content
     databaseId
-    pageHeaderImages {
-        pageheaderOption
-        pgBackgroundColor
-        textColor
-        primaryImage {
-          altText
-          remoteFile {
-            id
-            publicURL
-            childImageSharp {
-              fluid {
-                base64
-                tracedSVG
-                srcWebp
-                srcSetWebp
-                originalImg
-                originalName
-                srcSet
-              }
-            }
-          }
-          title
-        }
-        secondaryImage {
-          altText
-          remoteFile {
-            id
-            childImageSharp {
-              fluid {
-                base64
-                tracedSVG
-                srcWebp
-                srcSetWebp
-                originalImg
-                originalName
-                srcSet
-              }
-            }
-          }
-          title
-        }
-      }
     featuredImage {
       remoteFile {
         ...HeroImage

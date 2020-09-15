@@ -9,8 +9,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `South Dallas Smiles Dental Clinic`,
-    description: `South Dallas Smiles Dental is committed to "Making Dentistry Personal Again."`,
+    title: `KerryJo Felder for Minneapolis School Board`,
+    description: `Kerry Jo is a MPS parent who believes the district belongs to its parents and students."`,
     author: `@mohknowsreal`,
   },
   plugins: [
@@ -113,19 +113,19 @@ module.exports = {
           type: "website",
           locale: "en_US",
           language: "en",
-          url: "https://www.saintpaulpromiseneighborhood.org/",
-          site_name: "Saint Paul Promise Neighborhood",
-          title: "Saint Paul Promise Neighborhood",
-          titleTemplate: "%s | Saint Paul Promise Neighborhood",
+          url: "https://www.kerryjo4schoolboard.com/",
+          site_name: "KerryJo Felder for Minneapolis School Board",
+          title: "KerryJo Felder for Minneapolis School Board",
+          titleTemplate: "%s | KerryJo Felder for Minneapolis School Board",
           description:
-            "The Saint Paul Promise Neighborhood is an education partnership that puts children in the Frogtown, Rondo, and Summit-University neighborhoods of Saint Paul on the pathway to college and career success.",
+            "Kerry Jo is a MPS parent who believes the district belongs to its parents and students. She will work hard to lift your voice in creating solutions that address local disparities and make schools you are proud to call your own.",
           images: [
             {
               url:
                 "https://res.cloudinary.com/afrodeli/image/upload/v1598909776/sppn-videodocs-1536x864_qmhtpk.png",
               width: 1536,
               height: 864,
-              alt: "Saint Paul Promise Neighborhood",
+              alt: "KerryJo Felder for Minneapolis School Board",
             },
           ],
         },

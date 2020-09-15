@@ -19,7 +19,7 @@ body:not(.overlay-header) .primary-menu > li > .icon,
 .archive-header a,
 .header-footer-group .color-accent,
 .header-footer-group .color-accent-hover:hover {
-  color: #23c7aa;
+  color: #fdcb00;
 }
 
 .site-description,
@@ -86,6 +86,6 @@ body:not(.overlay-header) .primary-menu > li > .icon,
   padding: 5px;
   height: 40px;
   overflow: hidden;
-  color: #23c7aa;
+  color: #fdcb00;
   font-weight: 600;
 }
