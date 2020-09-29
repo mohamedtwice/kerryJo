@@ -2480,7 +2480,7 @@ h1.entry-title {
   margin: 0.5rem 0 0 1rem;
   text-decoration: none;
   text-transform: uppercase;
-  background: white;
+  background: #000;
   padding: 0.6em 0.6em 0.4em;
 }
 
@@ -2754,6 +2754,8 @@ h2.entry-title {
 .pagination-single-inner {
   display: flex;
   flex-direction: column;
+  background: rgb(51, 51, 51);
+  padding: 20px 10px;
 }
 
 .pagination-single hr:first-child {
@@ -5189,7 +5191,7 @@ a.to-the-top > * {
   .entry-categories a {
     font-size: 1.5rem;
     margin: 1rem 0 0 2rem;
-    background: white;
+    background: #000;
     padding: 0.5em;
     border: none !important;
   }
@@ -7337,7 +7339,7 @@ a.circle-icon:focus {
 
 .blog-post-header {
   padding: 1em 0;
-  background: #fdcb00 !important;
+  background: rgb(51, 51, 51) !important;
   max-width: 115rem;
   margin: auto;
 }
