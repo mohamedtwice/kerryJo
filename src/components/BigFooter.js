@@ -78,7 +78,7 @@ export default function BigFooter() {
   return (
     <Wrapper>
       <Div>
-        <div className="item">
+        <div className="item smItem">
           <h5>Vote KerryJo Felder for Minneapolis School Board</h5>
           <p style={{ fontSize: "1.75rem", textAlign: "left" }}>
             Kerry Jo is a MPS parent who believes the district belongs to its
@@ -94,6 +94,7 @@ export default function BigFooter() {
               padding: "10px 15px",
               float: "left",
               marginTop: "-5px",
+              scrollSnapMarginBottom: "10px",
             }}
           >
             Learn more about KerryJo &rarr;
@@ -107,7 +108,7 @@ export default function BigFooter() {
               campaign.
             </p>
             <Mailchimp
-              action="https://saintpaulpromiseneighborhood.us16.list-manage.com/subscribe/post?u=XXXXXXXXXXXXX&amp;id=XXXXXX"
+              action="https://app.us20.list-manage.com/subscribe/post?u=f254cf789f0adfef8bc2b1023&id=dddd180a9b"
               //Adding multiple fields:
               fields={[
                 {

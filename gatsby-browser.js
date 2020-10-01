@@ -8,6 +8,7 @@ import "./src/assets/slider-2.css"
 import "./src/assets/bootstrap.4.1.1.min.css"
 import "./src/assets/style-analogue.css"
 import "./src/assets/style.css"
+import "./src/assets/coblocks.css"
 // import "./src/assets/insight.css"
 
 const addScript = url => {

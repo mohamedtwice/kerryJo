@@ -7794,3 +7794,20 @@ a.circle-icon:focus {
 .mobile-drop-arrow {
   background: transparent !important;
 }
+
+body:not(.overlay-header) .primary-menu > li > .icon {
+  color: #333;
+}
+
+.primary-menu > li > .icon {
+  right: -0.15rem;
+  top: calc(50% - 7px);
+}
+
+.item { margin-bottom: 3rem; }
+
+
+.msg-alert {
+  position: absolute;
+  margin-top: 75px;
+}

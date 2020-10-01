@@ -23,6 +23,25 @@ const Wrapper = styled.div`
   }
 `
 
+const Wrapper2 = styled.div`
+  &&& {
+    max-width: 1140px;
+    display: flex;
+    flex-flow: column;
+    align-items: baseline;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    // background-color: rgba(0, 0, 0, 0.33);
+    text-align: center;
+    H2,
+    H3 {
+      margin: 0 36px;
+    }
+  }
+`
+
 const H2 = styled.h2`
   color: white;
   text-align: left;
@@ -85,8 +104,10 @@ const BackgroundSection = ({ className }) => {
         backgroundColor={`#040e18`}
         style={{ display: "flex", alignItems: "center" }}
       >
-        {/* <h2>gatsby-background-image</h2> */}
-        <H2>{heroTitle}</H2>
+        <Wrapper2>
+          {/* <h2>gatsby-background-image</h2> */}
+          <H2>{heroTitle}</H2>
+        </Wrapper2>
       </BackgroundImage>
     </Wrapper>
   )

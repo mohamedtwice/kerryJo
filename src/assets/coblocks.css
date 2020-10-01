@@ -1,0 +1,22 @@
+ul.is-style-checkbox {
+    list-style: none;
+}
+ul.is-style-checkbox li:before {
+    content: '\2714\0020';
+    margin-right: 20px;
+    /*display: flex;*/
+    /*flex-direction: row;*/
+}
+.entry-content ul.is-style-checkbox li {
+    line-height: 1.476;
+    display: flex;
+}
+
+.accomplishments {
+    background: #efefef;
+    padding: 20px;
+}
+
+figure.top-img {
+    margin-top: 0 !important;
+}

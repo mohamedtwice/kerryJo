@@ -29,7 +29,14 @@ export default ({ data }) => {
             className="post-home post page type-page status-publish hentry"
             id="post-home"
           >
+
             <HomeHero />
+            <div className="post-inner thin pf">
+              <div
+                  className="entry-content"
+                  dangerouslySetInnerHTML={{ __html: content }}
+              />
+            </div>
             <ThreeBoxes />
           </article>
         </Layout>
@@ -41,7 +48,7 @@ export default ({ data }) => {
     <>
       <GatsbySeo title={title} description={excerpt} />
       <Layout
-        bodyClass={`page-template-default page page-id-${databaseId} wp-embed-responsive singular missing-post-thumbnail has-no-pagination not-showing-comments footer-top-visible customize-support`}
+        bodyClass={`page-template-default page page-id-home page-id-${databaseId} wp-embed-responsive singular missing-post-thumbnail has-no-pagination not-showing-comments footer-top-visible customize-support`}
       >
         {/*<Seo title={title} description={excerpt} />*/}
 
@@ -58,17 +65,30 @@ export default ({ data }) => {
           {pageHeaderImages.pageheader_option !== "photos" && (
             <PageHeader pageHeaderImages={pageHeaderImages} />
           )} */}
-          <header
-            className={`entry-header has-text-align-center header-footer-group`}
-            style={{ maxWidth: "1140px", margin: "0 auto" }}
-          >
-            <div className="header-inner section-inner" style={{}}>
-              <h1
-                className={`page-title `}
-                dangerouslySetInnerHTML={{ __html: title }}
+          <header className="has-text-align-center header-footer-group blog-post-header">
+            <div
+                className="entry-header-inner section-inner medium flexl"
+                style={{ maxWidth: "1140px" }}
+            >
+              <h2
+                  className="entry-title"
+                  style={{ textAlign: "left", fontSize: "1.5em" }}
+                  dangerouslySetInnerHTML={{ __html: title }}
               />
             </div>
           </header>
+
+          {/*<header*/}
+          {/*  className={`entry-header has-text-align-center header-footer-group`}*/}
+          {/*  style={{ maxWidth: "1140px", margin: "0 auto" }}*/}
+          {/*>*/}
+          {/*  <div className="header-inner section-inner" style={{}}>*/}
+          {/*    <h1*/}
+          {/*      className={`page-title `}*/}
+          {/*      dangerouslySetInnerHTML={{ __html: title }}*/}
+          {/*    />*/}
+          {/*  </div>*/}
+          {/*</header>*/}
 
           {/*<header className="entry-header has-text-align-center header-footer-group" style={{ padding: "4erm 0",background: "#E5A342", display: "flex", flexDirection: "row", alignContent: "flex-start" }}>*/}
           {/*    <div className="entry-header-inner section-inner">*/}

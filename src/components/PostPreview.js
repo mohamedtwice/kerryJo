@@ -11,7 +11,11 @@ import BlogMedia from "./BlogMedia";
 const PostPreview = ({ post, isLast }) => {
     console.log(post.categories)
 
-  return (
+    const imgURL =
+        post.featuredImage ||
+        "https://res.cloudinary.com/afrodeli/image/upload/v1598909776/sppn-videodocs-1536x864_qmhtpk.png"
+
+    return (
       <>
       <article
           key={post.id}
@@ -19,13 +23,13 @@ const PostPreview = ({ post, isLast }) => {
           id={`post-${post.databaseId}`}
       >
         <div className="blog-card">
-          <Link
-              className="img-centered img-bg d-block"
-              to={normalizePath(post.uri)}
-          >
-            {/*<img src={post.featuredImage} />*/}
-              <BlogMedia image={post.featuredImage} />
-          </Link>
+          {/*<Link*/}
+          {/*    className="img-centered img-bg d-block"*/}
+          {/*    to={normalizePath(post.uri)}*/}
+          {/*>*/}
+          {/*  /!*<img src={post.featuredImage} />*!/*/}
+          {/*    <BlogMedia image={post.featuredImage} />*/}
+          {/*</Link>*/}
           <div className={`card ${post.categories} `}>
             <div className="card-body p-0">
                         <span className="entry-category">

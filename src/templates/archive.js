@@ -21,6 +21,21 @@ const Archive = (props) => {
     <Layout bodyClass="home blog wp-embed-responsive has-no-pagination showing-comments hide-avatars footer-top-visible customize-support">
       <Seo title="Home" description="Welcome to the Twenty Nineteen Theme." />
         <div className="post-inner thin" style={{maxWidth:"1040px", margin: "0 auto"}}>
+
+            <header className="has-text-align-center header-footer-group blog-post-header">
+                <div
+                    className="entry-header-inner section-inner medium flexl"
+                    style={{ maxWidth: "1140px" }}
+                >
+                    <h2
+                        className="entry-title"
+                        style={{ textAlign: "left", fontSize: "1.5em" }}
+                        dangerouslySetInnerHTML={{ __html: "Latest News" }}
+                    />
+                </div>
+            </header>
+
+
             <div className="col-lg-12">
                 <div className=" row blog-list">
       {/*<div className="newsContainer">*/}
