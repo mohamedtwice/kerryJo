@@ -18,6 +18,7 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
+    "axios": "^0.20.0",
     "dotenv": "^8.2.0",
     "gatsby": "^2.20.29",
     "gatsby-background-image": "^1.1.2",

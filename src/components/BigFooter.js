@@ -100,7 +100,7 @@ export default function BigFooter() {
             Learn more about KerryJo &rarr;
           </Link>
         </div>
-        <div className="item">
+        <div id="emailsignup" className="item">
           <div className="footer-column footerSignupDiv">
             <h5>Sign up for Updates</h5>
             <p style={{ fontSize: "1.75rem", textAlign: "left" }}>

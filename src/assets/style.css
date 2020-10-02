@@ -717,9 +717,13 @@ input[type="checkbox"]:checked::before {
   content: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2020%2020%27%3E%3Cpath%20d%3D%27M14.83%204.89l1.34.94-5.81%208.38H9.02L5.78%209.67l1.34-1.25%202.57%202.4z%27%20fill%3D%27%23000000%27%2F%3E%3C%2Fsvg%3E");
   position: absolute;
   display: inline-block;
-  margin: -0.1875rem 0 0 -0.25rem;
-  height: 1.75rem;
-  width: 1.75rem;
+  margin: -1.05rem 0 0 -0.25rem;
+  height: 1.7rem;
+  width: 1.7rem;
+}
+
+.form-check-input {
+  background: #dcd7ca !important;
 }
 
 input,
@@ -3532,7 +3536,7 @@ figure.wp-block-table.is-style-stripes {
 
 .entry-content {
   line-height: 1.5;
-  padding: 2rem 0;
+  padding: 0rem 0;
 }
 
 .blog-media {
@@ -7338,7 +7342,7 @@ a.circle-icon:focus {
 }
 
 .blog-post-header {
-  padding: 1em 0;
+  padding: .25em 0;
   background: rgb(51, 51, 51) !important;
   max-width: 115rem;
   margin: auto;
@@ -7801,7 +7805,7 @@ body:not(.overlay-header) .primary-menu > li > .icon {
 
 .primary-menu > li > .icon {
   right: -0.15rem;
-  top: calc(50% - 7px);
+  top: calc(50% - 6px);
 }
 
 .item { margin-bottom: 3rem; }
@@ -7810,4 +7814,178 @@ body:not(.overlay-header) .primary-menu > li > .icon {
 .msg-alert {
   position: absolute;
   margin-top: 75px;
+}
+
+.ig {
+  flex-direction: column;
+}
+
+.ig1 {
+  flex-direction: column;
+  width: 100% !important;
+}
+
+.input-group>.form-control {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 100%;
+  font-size: .85em;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.pf {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0;
+}
+
+.page-sidebar {
+  max-width: 100%;
+  margin-top: 3em;
+}
+
+textarea {
+  min-height: 18rem;
+}
+
+.signuph4 {
+  margin-bottom: 30px;
+}
+
+.volunteer-form {
+  background: #eee;
+  padding: 25px;
+}
+.allside {
+display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 2rem;
+  padding: 25px;
+  background: #eee;
+}
+
+.pf {
+  padding: 2rem 0;
+}
+
+.archiveheader {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 850px) {
+  .pf {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    max-width: 115rem;
+    padding: 3rem 0;
+  }
+  .archiveheader {
+    margin-bottom: 3rem;
+  }
+
+  .page-sidebar {
+    max-width: 35%;
+    width: 100%;
+    margin-top: 0;
+  }
+  .allside {
+    width: calc(100% - 4rem);
+    padding: 20px;
+    margin: auto;
+    background: #eee;
+  }
+
+}
+
+.entry-content figure.wp-block-image {
+  margin-top: 0 !important;
+}
+
+.btn{
+  text-transform:uppercase;
+  background-color:#ddd;
+  padding:1em;
+  display:inline-block;
+  line-height:1;
+  position:relative;
+  margin-right:1em;
+  float:left;
+  clear:both;
+  margin: 20px 0;
+}
+
+/*.btn:after{*/
+/*  content: "";*/
+/*  width: 0;*/
+/*  height: 0;*/
+/*  border-top: 1.5em solid transparent;*/
+/*  border-bottom: 1.5em solid transparent;*/
+/*  border-left: 1.2em solid #fdcb00;*/
+/*  position: absolute;*/
+/*  top:0;*/
+/*  left:100%;*/
+/*}*/
+
+
+.btn:hover{
+  background-color:#111;
+  color: #fff
+}
+
+/*.btn:hover:after{*/
+/*  border-left-color: #111;*/
+/*}*/
+
+.btn-lar{
+  font-size: 2rem;
+}
+
+.donatebtn {
+  background: #fdcb00;
+  width: 100%;
+  color: #111;
+  margin: 0 0 1em;
+}
+.volunteerbtn {
+  background: rebeccapurple;
+  width: 100%;
+  color: #fff;
+  margin: 0 0 1em;
+}
+
+.allside h4, .signuph4 {
+  text-transform: uppercase;
+  font-size: 2em;
+  margin: 0 0 1.2rem !important;
+}
+
+.btn-danger {
+  color: #111;
+  background-color: #fdcb00 !important;
+  border-color: #fdcb00;
+  background: #fdcb00;
+  font-size: 1.6rem;
+  padding: 1em 4em !important;
+}
+
+@media (min-width: 2400px) {
+  .allside h4, .signuph4 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin: 0 0 1.2rem !important;
+  }
+  .input-group>.form-control {
+    font-size: 1.8rem;
+  }
+}
+
+
+@media (any-pointer: coarse) {
+  .primary-menu > li.menu-item-has-children > a {
+    padding-right: 2rem;
+    margin-right: 0;
+  }
 }

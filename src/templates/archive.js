@@ -20,9 +20,9 @@ const Archive = (props) => {
   return (
     <Layout bodyClass="home blog wp-embed-responsive has-no-pagination showing-comments hide-avatars footer-top-visible customize-support">
       <Seo title="Home" description="Welcome to the Twenty Nineteen Theme." />
-        <div className="post-inner thin" style={{maxWidth:"1040px", margin: "0 auto"}}>
+        <div className="post-inner thin" style={{maxWidth:"1140px", margin: "0 auto"}}>
 
-            <header className="has-text-align-center header-footer-group blog-post-header">
+            <header className="has-text-align-center header-footer-group blog-post-header archiveheader">
                 <div
                     className="entry-header-inner section-inner medium flexl"
                     style={{ maxWidth: "1140px" }}

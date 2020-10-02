@@ -6,14 +6,10 @@ import PostCategories from "./PostCategories"
 import FeaturedMedia from "./FeaturedMedia"
 import HomePostCategories from "./HomePostCategories";
 import moment from "moment";
-import BlogMedia from "./BlogMedia";
+// import BlogMedia from "./BlogMedia";
 
 const PostPreview = ({ post, isLast }) => {
     console.log(post.categories)
-
-    const imgURL =
-        post.featuredImage ||
-        "https://res.cloudinary.com/afrodeli/image/upload/v1598909776/sppn-videodocs-1536x864_qmhtpk.png"
 
     return (
       <>

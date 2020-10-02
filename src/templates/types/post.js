@@ -50,18 +50,14 @@ export default ({ data }) => {
                 style={{ textAlign: "left", fontSize: "1.5em" }}
                 dangerouslySetInnerHTML={{ __html: title }}
               />
-              {/*<div*/}
-              {/*  className="intro-text section-inner max-percentage small"*/}
-              {/*  dangerouslySetInnerHTML={{ __html: excerpt }}*/}
-              {/*/>*/}
               <PostMeta title={title} author={author} date={date} />
             </div>
           </header>
 
           <div className="post-inner thin">
-            <div className="entry-content">
-              <BlogMedia image={featuredImage} />
-            </div>
+            {/*<div className="entry-content">*/}
+            {/*  <BlogMedia image={featuredImage} />*/}
+            {/*</div>*/}
 
             <div
               className="entry-content"
