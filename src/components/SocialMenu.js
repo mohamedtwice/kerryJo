@@ -121,8 +121,8 @@ const SocialMenu = ({ isExpanded }) => {
               <li
                 key={itemId}
                 className={
-                  "menu-item menu-item-type-custom menu-item-object-custom" +
-                  itemId +
+                  "menu-item menu-item-type-custom menu-item-object-custom " +
+                  itemId + " " +
                   itemLabel
                 }
               >
