@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../../components/Layout"
 import Seo from "../../components/Seo"
-import FeaturedMedia from "../../components/FeaturedMedia"
+// import FeaturedMedia from "../../components/FeaturedMedia"
 import ThreeBoxes from "../../components/ThreeBoxes"
 // import homebanner from "../assets/images//pn-homebannerbg.png";
 import { GatsbySeo } from "gatsby-plugin-next-seo"

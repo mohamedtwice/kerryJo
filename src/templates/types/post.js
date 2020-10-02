@@ -7,7 +7,7 @@ import ContentTypePagination from "../../components/ContentTypePagination"
 import AuthorBio from "../../components/AuthorBio"
 import PostMeta from "../../components/PostMeta"
 import PostCategories from "../../components/PostCategories"
-import BlogMedia from "../../components/BlogMedia"
+// import BlogMedia from "../../components/BlogMedia"
 import { GatsbySeo } from "gatsby-plugin-next-seo"
 
 export default ({ data }) => {
@@ -23,9 +23,6 @@ export default ({ data }) => {
     date,
   } = page
 
-  const imgURL =
-    featuredImage.remoteFile.publicURL ||
-    "https://res.cloudinary.com/afrodeli/image/upload/v1598909776/sppn-videodocs-1536x864_qmhtpk.png"
 
   return (
     <>
@@ -33,7 +30,6 @@ export default ({ data }) => {
       <Layout
         bodyClass={`post-template-default single single-post postid-${databaseId} single-format-standard wp-embed-responsive singular has-post-thumbnail has-single-pagination showing-comments footer-top-visible customize-support`}
       >
-        {/*<Seo title={title} description={excerpt} />*/}
 
         <article
           className={`post-${databaseId} post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized`}
@@ -55,10 +51,6 @@ export default ({ data }) => {
           </header>
 
           <div className="post-inner thin">
-            {/*<div className="entry-content">*/}
-            {/*  <BlogMedia image={featuredImage} />*/}
-            {/*</div>*/}
-
             <div
               className="entry-content"
               dangerouslySetInnerHTML={{ __html: content }}

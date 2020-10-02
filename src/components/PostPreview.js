@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { normalizePath } from "../utils/normalize-path"
 import PostMeta from "./PostMeta"
 import PostCategories from "./PostCategories"
-import FeaturedMedia from "./FeaturedMedia"
+// import FeaturedMedia from "./FeaturedMedia"
 import HomePostCategories from "./HomePostCategories";
 import moment from "moment";
 // import BlogMedia from "./BlogMedia";
