@@ -4585,6 +4585,7 @@ a.to-the-top > * {
 .footer-copyright {
   font-weight: 600;
   margin: 0;
+  font-size: 1.75rem;
 }
 
 .powered-by-wordpress {

@@ -39,7 +39,7 @@ const Footer = ({}) => {
       <Wrapper>
         <WrapDiv>
           <p className="footer-copyright">
-            Copyright © {moment().format("YYYY")}{" "}
+            © Copyright {moment().format("YYYY")}{" "}
             <Link to={"/"}> KerryJo Felder for Minneapolis School Board</Link>
           </p>
           <p style={{ margin: "0" }}>
