@@ -16,11 +16,15 @@ import { createLocalLink } from "../utils/local-link"
 
 const Wrapper = styled.div`
   &&& {
-    max-width: 1140px;
+    max-width: 115rem;
     display: flex;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.33);
-    text-align: center;
+    text-align: center;    
+    @media (min-width: 850px) {
+    border-left: 3px solid;
+    border-right: 3px solid;
+    }
     H2,
     H3 {
       margin: 0 36px;
