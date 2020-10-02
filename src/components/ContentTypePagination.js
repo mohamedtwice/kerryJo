@@ -4,13 +4,17 @@ import { normalizePath } from "../utils/normalize-path"
 import styled from "styled-components"
 
 const Wrapper = styled.div`
-    max-width: 1140px;
+    max-width: 115rem;
     margin: auto;
     /* padding: 0 2rem; */
     display: flex;
     flex-flow: column-reverse;
     align-items: center;
     justify-content: center;
+    @media (min-width: 850px) {
+    border-left: 3px solid;
+    border-right: 3px solid;
+    }
     @media (min-width: 990px) {
     flex-flow: row;
     justify-content: space-between;

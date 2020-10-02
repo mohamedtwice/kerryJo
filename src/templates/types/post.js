@@ -35,7 +35,7 @@ export default ({ data }) => {
           className={`post-${databaseId} post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized`}
           id={`post-${databaseId}`}
         >
-          <header className="has-text-align-center header-footer-group blog-post-header">
+          <header className="has-text-align-center header-footer-group blog-post-header bph">
             <div
               className="entry-header-inner section-inner medium flexl"
               style={{ maxWidth: "1040px" }}
@@ -50,7 +50,7 @@ export default ({ data }) => {
             </div>
           </header>
 
-          <div className="post-inner thin">
+          <div className="post-inner thin pf pit">
             <div
               className="entry-content"
               dangerouslySetInnerHTML={{ __html: content }}

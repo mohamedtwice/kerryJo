@@ -26,7 +26,7 @@ const Wrapper = styled.div`
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.33);
     @media (min-width: 768px) {
-      max-width: 1140px;
+      max-width: 115rem;
       width: 100%;
       height: 100%;
       margin: 0 auto;
@@ -36,6 +36,11 @@ const Wrapper = styled.div`
         margin: 0 36px;
       }
     }
+    @media (min-width: 850px) {
+    border-left: 3px solid;
+    border-right: 3px solid;
+    border-bottom: 3px solid;
+  }
   }
 `
 

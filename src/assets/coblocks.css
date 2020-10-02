@@ -20,3 +20,22 @@ ul.is-style-checkbox li:before {
 figure.top-img {
     margin-top: 0 !important;
 }
+
+p {
+    font-family: mr-eaves-modern, sans-serif !important;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 1.25 !important;
+}
+
+.bph {
+    padding-bottom: 2rem;
+}
+
+.title-inner {
+    font-size: 1.9rem;
+}
+
+.pit {
+    padding: 1rem 0;
+}

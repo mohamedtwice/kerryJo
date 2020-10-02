@@ -1347,10 +1347,15 @@ ul.social-icons li {
 
 .header-inner {
   max-width: 168rem;
-  padding: 3.15rem 0;
+  padding: 2.5rem 0 !important;
   z-index: 100;
 }
 
+@media (min-width: 769px) {
+  .header-inner {
+    padding: 3.15rem 0 !important;;
+  }
+}
 /* Header Titles ----------------------------- */
 
 .header-titles-wrapper {
@@ -2506,6 +2511,8 @@ h2.entry-title {
 .entry-title a {
   color: inherit;
   text-decoration: none;
+  font-family: open-sans, sans-serif;
+  font-weight: 600;
 }
 
 .entry-title a:focus,
@@ -4460,7 +4467,7 @@ div.comment:first-of-type {
 .footer-top,
 .footer-widgets-outer-wrapper,
 #site-footer {
-  padding: 3rem 0;
+  padding: 1.5rem 0;
 }
 
 /* Footer Top -------------------------------- */
@@ -5260,7 +5267,7 @@ a.to-the-top > * {
 
   .pagination-single {
     font-size: 2.4rem;
-    margin-top: 8rem;
+    margin-top: 2rem;
   }
 
   .pagination-single-inner {
@@ -5548,7 +5555,8 @@ a.to-the-top > * {
   /* Comments ------------------------------ */
 
   .comments-wrapper {
-    margin-top: 8rem;
+    /*margin-top: 8rem;*/
+    margin-top: 0rem;
   }
 
   .comment-reply-title {
@@ -5738,7 +5746,7 @@ a.to-the-top > * {
 
   #site-footer {
     font-size: 1.8rem;
-    padding: 3rem 0 0;
+    padding: 1.5  rem 0 0;
   }
 
   .footer-credits {
@@ -7220,9 +7228,10 @@ a.circle-icon:focus {
 }
 
 .mobile-child-menu-item {
-  border-left-color: #eee !important;
+  border-left-color: rebeccapurple !important;
   border-left-width: 1.5rem !important;
-  background: #eee;
+  background: rebeccapurple;
+  color: #fff;
 }
 
 .mobile-child-link {
@@ -7342,8 +7351,8 @@ a.circle-icon:focus {
 }
 
 .blog-post-header {
-  padding: .25em 0;
-  background: rgb(51, 51, 51) !important;
+  padding: 1.25em 0;
+  background: rebeccapurple !important;
   max-width: 115rem;
   margin: auto;
 }
@@ -7574,7 +7583,7 @@ a.circle-icon:focus {
   flex-direction: row;
 }
 .footerSignup button {
-  width: 30%;
+  width: 95%;
   display: inline-flex;
   max-height: 50px;
   justify-content: center;
@@ -7606,6 +7615,9 @@ a.circle-icon:focus {
 }
 
 @media (min-width: 500px) {
+  .footerSignup button {
+    width: 55%;
+  }
   .footerRight {
     display: flex;
     flex-direction: column;
@@ -7627,6 +7639,9 @@ a.circle-icon:focus {
 }
 
 @media (min-width: 769px) {
+  .footerSignup button {
+    width: 70%;
+  }
   .donate-img {
     max-width: 50%;
     width: 100%;
@@ -7663,6 +7678,9 @@ a.circle-icon:focus {
 }
 
 @media (min-width: 990px) {
+  .footerSignup button {
+    width: 55%;
+  }
   .footerSocial h4 {
     margin-bottom: 1.5rem !important;
   }
@@ -7742,7 +7760,7 @@ a.circle-icon:focus {
   width: 100%;
   background: #fff;
   justify-content: space-between;
-  padding: 5rem 2rem;
+  padding: 2rem 2rem;
 }
 
 .hbox {
@@ -7756,7 +7774,8 @@ a.circle-icon:focus {
 
 .hbox h2 {
   color: #333;
-  font-size: 3rem;
+  font-size: 2rem;
+  margin: 0 !important;
 }
 
 @media (min-width: 768px) {
@@ -7769,7 +7788,7 @@ a.circle-icon:focus {
     width: 100%;
     background: #fff;
     justify-content: space-between;
-    padding: 5rem 2rem;
+    padding: 2rem 2rem;
   }
   .hbox {
     width: 31%;
@@ -7777,6 +7796,17 @@ a.circle-icon:focus {
     padding: 1rem;
     border: 1rem solid #fdcb00;
     font-size: 2rem;
+  }
+}
+@media (min-width: 1100px) {
+  .hbox h2 {
+    color: #333;
+    font-size: 3rem;
+  }
+  .container-flex,
+  .container-order,
+  .flex-center-center {
+    padding: 4rem 2rem;
   }
 }
 .page-title {
@@ -7881,9 +7911,20 @@ display: flex;
     margin: auto;
     max-width: 115rem;
     padding: 3rem 0;
+    border-left: 3px solid;
+    border-right: 3px solid;
   }
   .archiveheader {
-    margin-bottom: 3rem;
+    margin-bottom: 0rem;
+    border-left: 3px solid;
+    border-right: 3px solid;
+    border-top: 3px solid;
+  }
+
+  .blog-post-header{
+    border-left: 3px solid;
+    border-right: 3px solid;
+    border-top: 3px solid;
   }
 
   .page-sidebar {
@@ -7960,6 +8001,7 @@ display: flex;
   text-transform: uppercase;
   font-size: 2em;
   margin: 0 0 1.2rem !important;
+  color: rebeccapurple;
 }
 
 .btn-danger {
