@@ -8037,10 +8037,10 @@ display: flex;
   margin: auto;
 }
 
-.menu-item-Facebook {
+.menu-item-Facebook a {
   background: #3b5998 !important;
 }
 
-.menu-item-Facebook:hover {
+.menu-item-Facebook a:hover {
   background: #111 !important;
 }
