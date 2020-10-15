@@ -52,7 +52,7 @@ export default ({ data }) => {
     <>
       <GatsbySeo title={title}
                  description={excerpt}
-                 titleTemplate={`%s | KerryJo Felder for Minneapolis School Board`} />
+                 titleTemplate={`%s | KerryJo Felder 4 Minneapolis School Board: District 2`} />
       <Layout
         bodyClass={`page-template-default page page-id-home page-id-${databaseId} wp-embed-responsive singular missing-post-thumbnail has-no-pagination not-showing-comments footer-top-visible customize-support`}
       >
