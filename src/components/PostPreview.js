@@ -27,7 +27,7 @@ const PostPreview = ({ post, isLast }) => {
           {/*    <BlogMedia image={post.featuredImage} />*/}
           {/*</Link>*/}
           <div className={`card ${post.categories} `}>
-            <div className="card-body p-0">
+            <div className="card-body p-0 h-100">
                         <span className="entry-category">
                           {/*<a href="javascript:;" rel="category tag">*/}
                           <HomePostCategories categories={post.categories} />

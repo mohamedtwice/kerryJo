@@ -1842,7 +1842,7 @@ ul.primary-menu {
 .menu-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   position: relative;
 }
 
@@ -2759,7 +2759,7 @@ h2.entry-title {
 
 .pagination-single {
   font-size: 1.8rem;
-  margin-top: 5rem;
+  margin-top: 0rem;
 }
 
 .pagination-single-inner {
@@ -5760,6 +5760,7 @@ a.to-the-top > * {
 
   .powered-by-wordpress {
     display: block;
+    font-size: 1.75rem;
   }
 
   .to-the-top-long {
@@ -5807,7 +5808,7 @@ a.to-the-top > * {
   }
 
   .header-titles-wrapper {
-    margin-right: 4rem;
+    margin-right: 0;
     max-width: 100%;
     padding: 0;
     text-align: left;
@@ -7589,6 +7590,7 @@ a.circle-icon:focus {
   max-height: 50px;
   justify-content: center;
   font-size: 1.5rem;
+  color: #111;
 }
 .footerSignup input[type="text"],
 .footerSignup input[type="email"] {
@@ -7912,20 +7914,20 @@ display: flex;
     margin: auto;
     max-width: 115rem;
     padding: 3rem 0;
-    border-left: 3px solid;
-    border-right: 3px solid;
+    border-left: 3px solid rebeccapurple;
+    border-right: 3px solid rebeccapurple;
   }
   .archiveheader {
     margin-bottom: 0rem;
-    border-left: 3px solid;
-    border-right: 3px solid;
-    border-top: 3px solid;
+    border-left: 3px solid rebeccapurple;
+    border-right: 3px solid rebeccapurple;
+    border-top: 3px solid rebeccapurple;
   }
 
   .blog-post-header{
-    border-left: 3px solid;
-    border-right: 3px solid;
-    border-top: 3px solid;
+    border-left: 3px solid rebeccapurple;
+    border-right: 3px solid rebeccapurple;
+    border-top: 3px solid rebeccapurple;
   }
 
   .page-sidebar {
@@ -7935,7 +7937,7 @@ display: flex;
   }
   .allside {
     width: calc(100% - 4rem);
-    padding: 20px;
+    padding: 20px 25px;
     margin: auto;
     background: #eee;
   }
@@ -8001,7 +8003,7 @@ display: flex;
 .allside h4, .signuph4 {
   text-transform: uppercase;
   font-size: 2em;
-  margin: 0 0 1.2rem !important;
+  margin: 0 0 2rem !important;
   color: rebeccapurple;
 }
 
@@ -8037,10 +8039,58 @@ display: flex;
   margin: auto;
 }
 
-.menu-item-Facebook {
+.menu-item-Facebook a {
   background: #3b5998 !important;
 }
 
-.menu-item-Facebook:hover {
+.menu-item-Facebook a:hover {
   background: #111 !important;
+}
+
+.is-twentytwenty .entry-content hr.wp-block-coblocks-dynamic-separator.is-style-line::before, .is-twentytwenty .entry-content hr.wp-block-coblocks-dynamic-separator.is-style-fullwidth::before {
+  background: currentColor;
+  content: "";
+  display: block;
+  height: 1px;
+  margin-left: auto;
+  max-width: 120px;
+  top: 50%;
+  width: 15vw;
+}
+
+.entry-content .wp-block-group p, .wp-block-group__inner-container {
+  max-width: 100%;
+  padding: 25px !important;
+  background: #333 !important;
+  color: #fff;
+  font-size: 1.75rem;
+}
+
+.wp-block-group__inner-container p {
+  padding: 0 25px !important;
+}
+
+.wp-block-group__inner-container {
+  max-width: 100%;
+  padding: 0 25px !important;
+}
+
+.post-home .entry-content strong {
+  font-weight: 700;
+  color: #673499 !important;
+}
+.post-home .entry-content p {
+  font-size: 2.75rem;
+  margin: 2rem auto;
+}
+
+@media (min-width: 1200px) {
+  .post-home .entry-content p {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+}
+
+.blog-list .hentry {
+  margin-bottom: 3rem;
 }

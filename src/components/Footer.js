@@ -42,7 +42,7 @@ const Footer = ({}) => {
             © Copyright {moment().format("YYYY")}{" "}
             <Link to={"/"}> KerryJo Felder for Minneapolis School Board</Link>
           </p>
-          <p style={{ margin: "0" }}>
+          <p style={{ margin: "0", fontWeight: "1.75rem !important" }}>
             <a
               className="powered-by-wordpress"
               href="http://www.bsmg.co"

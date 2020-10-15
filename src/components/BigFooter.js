@@ -37,9 +37,9 @@ const Wrapper = styled.div`
       }
     }
     @media (min-width: 850px) {
-    border-left: 3px solid;
-    border-right: 3px solid;
-    border-bottom: 3px solid;
+    border-left: 3px solid rebeccapurple; 
+    border-right: 3px solid rebeccapurple;
+    border-bottom: 3px solid rebeccapurple;
   }
   }
 `
@@ -85,7 +85,7 @@ export default function BigFooter() {
       <Div>
         <div className="item smItem">
           <h5>Vote KerryJo Felder for Minneapolis School Board</h5>
-          <p style={{ fontSize: "1.75rem", textAlign: "left" }}>
+          <p style={{ fontSize: "2.15rem", textAlign: "left" }}>
             Kerry Jo is a MPS parent who believes the district belongs to its
             parents and students. She will work hard to lift your voice in
             creating solutions that address local disparities and make schools
@@ -94,7 +94,7 @@ export default function BigFooter() {
           <Link
             to="/about/"
             style={{
-              fontSize: "1.5rem",
+              fontSize: "1.85rem",
               background: "#333",
               padding: "10px 15px",
               float: "left",
@@ -108,7 +108,7 @@ export default function BigFooter() {
         <div id="emailsignup" className="item">
           <div className="footer-column footerSignupDiv">
             <h5>Sign up for Updates</h5>
-            <p style={{ fontSize: "1.75rem", textAlign: "left" }}>
+            <p style={{ fontSize: "2.15rem", textAlign: "left" }}>
               Sign up to receive the latest news and important updates from our
               campaign.
             </p>

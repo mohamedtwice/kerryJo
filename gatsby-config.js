@@ -14,6 +14,7 @@ module.exports = {
     author: `@mohknowsreal`,
   },
   plugins: [
+    `gatsby-plugin-advanced-sitemap`,
     `gatsby-plugin-notifications`,
     `gatsby-plugin-sharp`,
     {
@@ -122,7 +123,7 @@ module.exports = {
           images: [
             {
               url:
-                "https://res.cloudinary.com/afrodeli/image/upload/v1598909776/sppn-videodocs-1536x864_qmhtpk.png",
+                "https://res.cloudinary.com/bsmg/image/upload/v1602794017/KerryJo/kj-homeimage_drjskt.png",
               width: 1536,
               height: 864,
               alt: "KerryJo Felder for Minneapolis School Board",

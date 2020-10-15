@@ -9,6 +9,7 @@ import PostMeta from "../../components/PostMeta"
 import PostCategories from "../../components/PostCategories"
 // import BlogMedia from "../../components/BlogMedia"
 import { GatsbySeo } from "gatsby-plugin-next-seo"
+import { Link } from "gatsby"
 
 export default ({ data }) => {
   const { nextPage, previousPage, page } = data
@@ -55,6 +56,20 @@ export default ({ data }) => {
               className="entry-content"
               dangerouslySetInnerHTML={{ __html: content }}
             />
+            <div className="page-sidebar">
+              {title === 'Get Involved' &&
+              <>
+                <VolunteerForm />
+              </>
+              }
+              {title !== 'Get Involved' &&
+              <div className="allside">
+                <h4 className="signuph4">Get Involved</h4>
+                <Link className="btn btn-lar donatebtn" href="">Donate</Link>
+                <Link className="btn btn-lar volunteerbtn" href="">Volunteer</Link>
+              </div>
+              }
+            </div>
           </div>
 
           <div className="section-inner">

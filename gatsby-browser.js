@@ -20,6 +20,15 @@ const addScript = url => {
 
 export const onClientEntry = () => {
     window.onload = () => {
+
+        addScript(
+            window.fbAsyncInit = function() {
+            FB.init({
+                xfbml: true,
+                version: 'v8.0'
+            });
+        })
+        addScript("https://connect.facebook.net/en_US/sdk.js")
         addScript("https://promise.blackstarmg.com/wp-includes/js/hoverintent-js.min.js?ver=2.2.1");
         addScript("https://promise.blackstarmg.com/wp-content/themes/twentytwenty/assets/js/index.js?ver=1.3")
 

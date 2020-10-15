@@ -37,5 +37,19 @@ p {
 }
 
 .pit {
-    padding: 1rem 0;
+    padding: 3rem 0;
+}
+
+.next-post {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+.previous-post {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.blog-list {
+    width: 100%;
+    margin: 0;
 }

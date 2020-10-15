@@ -22,8 +22,8 @@ const Wrapper = styled.div`
     background-color: rgba(0, 0, 0, 0.33);
     text-align: center;    
     @media (min-width: 850px) {
-    border-left: 3px solid;
-    border-right: 3px solid;
+    border-left: 3px solid rebeccapurple;
+    border-right: 3px solid rebeccapurple;
     }
     H2,
     H3 {

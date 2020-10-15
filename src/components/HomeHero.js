@@ -18,9 +18,9 @@ const Wrapper = styled.div`
     text-align: center;
       
     @media (min-width: 850px) {
-     border-left: 3px solid;    
-        border-top: 3px solid;
-    border-right: 3px solid;
+     border-left: 3px solid rebeccapurple;    
+        border-top: 3px solid rebeccapurple;
+    border-right: 3px solid rebeccapurple;
     }
        
     H2,
@@ -126,6 +126,7 @@ const HomeHero = styled(BackgroundSection)`
   background-repeat: repeat-y;
   background-size: cover;
   min-height: 450px;
+  border-bottom: 20px solid rebeccapurple;
 `
 
 export default HomeHero
