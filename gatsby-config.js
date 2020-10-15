@@ -9,7 +9,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `KerryJo Felder for Minneapolis School Board`,
+    title: `KerryJo Felder 4 Minneapolis School Board: District 2`,
     siteUrl: 'https://www.kerryjo4schoolboard.com/',
     description: `Kerry Jo is a MPS parent who believes the district belongs to its parents and students.`,
     author: `@mohknowsreal`,
@@ -125,18 +125,18 @@ module.exports = {
           locale: "en_US",
           language: "en",
           url: "https://www.kerryjo4schoolboard.com/",
-          site_name: "KerryJo Felder for Minneapolis School Board",
-          title: "KerryJo Felder for Minneapolis School Board",
-          titleTemplate: "%s | KerryJo Felder for Minneapolis School Board",
+          site_name: "KerryJo Felder 4 Minneapolis School Board: District 2",
+          title: "KerryJo Felder 4 Minneapolis School Board: District 2",
+          titleTemplate: "%s | KerryJo Felder 4 Minneapolis School Board: District 2",
           description:
             "Kerry Jo is a MPS parent who believes the district belongs to its parents and students. She will work hard to lift your voice in creating solutions that address local disparities and make schools you are proud to call your own.",
           images: [
             {
               url:
                 "https://res.cloudinary.com/bsmg/image/upload/v1602794017/KerryJo/kj-homeimage_drjskt.png",
-              width: 1536,
-              height: 864,
-              alt: "KerryJo Felder for Minneapolis School Board",
+              width: 1200,
+              height: 600,
+              alt: "KerryJo Felder 4 Minneapolis School Board: District 2",
             },
           ],
         },
