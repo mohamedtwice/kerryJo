@@ -11,7 +11,7 @@ module.exports = {
   siteMetadata: {
     title: `KerryJo Felder for Minneapolis School Board`,
     siteUrl: 'https://www.kerryjo4schoolboard.com/',
-    description: `Kerry Jo is a MPS parent who believes the district belongs to its parents and students."`,
+    description: `Kerry Jo is a MPS parent who believes the district belongs to its parents and students.`,
     author: `@mohknowsreal`,
   },
   plugins: [
