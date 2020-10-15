@@ -91,8 +91,8 @@ export default ({ data }) => {
             {title !== 'Get Involved' &&
               <div className="allside">
                 <h4 className="signuph4">Get Involved</h4>
-                <Link className="btn btn-lar donatebtn" href="">Donate</Link>
-                <Link className="btn btn-lar volunteerbtn" href="">Volunteer</Link>
+                <Link className="btn btn-lar donatebtn" to="/donate/">Donate</Link>
+                <Link className="btn btn-lar volunteerbtn" to="/get-involved/">Volunteer</Link>
               </div>
             }
           </div>
