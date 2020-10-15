@@ -8,6 +8,7 @@ import Seo from "../components/Seo"
 // import PreviousIcon from "../../components/icons/previous"
 import PostPreview from "../components/PostPreview"
 import ArchivePagination from "../components/ArchivePagination"
+import { GatsbySeo } from "gatsby-plugin-next-seo"
 
 const Archive = (props) => {
   const {
@@ -19,8 +20,11 @@ const Archive = (props) => {
 
   return (
     <Layout bodyClass="home blog wp-embed-responsive has-no-pagination showing-comments hide-avatars footer-top-visible customize-support">
-      <Seo title="Home" description="Welcome to the Twenty Nineteen Theme." />
-        <div className="post-inner thin" style={{ padding: "0", margin: "0 auto"}}>
+        <GatsbySeo title={title}
+                   description={excerpt}
+                   titleTemplate={`%s | KerryJo Felder for Minneapolis School Board`} />
+
+                   <div className="post-inner thin" style={{ padding: "0", margin: "0 auto"}}>
 
             <header className="has-text-align-center header-footer-group blog-post-header archiveheader">
                 <div

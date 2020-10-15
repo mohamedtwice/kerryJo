@@ -6,6 +6,7 @@ export default () => (
     <>
         <GatsbySeo
             title="Page Not Found"
+            titleTemplate={`%s | KerryJo Felder for Minneapolis School Board`}
         />
   <Layout>
     <div>

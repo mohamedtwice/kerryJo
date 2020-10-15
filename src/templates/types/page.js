@@ -25,7 +25,9 @@ export default ({ data }) => {
   if (isFrontPage == true) {
     return (
       <>
-        <GatsbySeo title={title} description={excerpt} titleTemplate: `%s | KerryJo Felder for Minneapolis School Board` />
+        <GatsbySeo title={title}
+                   description={excerpt}
+                   titleTemplate={`%s | KerryJo Felder for Minneapolis School Board`} />
         <Layout bodyClass="page-template-default page page-id-home wp-embed-responsive singular missing-post-thumbnail has-no-pagination not-showing-comments footer-top-visible customize-support">
           <article
             className="post-home post page type-page status-publish hentry"
@@ -48,7 +50,9 @@ export default ({ data }) => {
 
   return (
     <>
-      <GatsbySeo title={title} description={excerpt} />
+      <GatsbySeo title={title}
+                 description={excerpt}
+                 titleTemplate={`%s | KerryJo Felder for Minneapolis School Board`} />
       <Layout
         bodyClass={`page-template-default page page-id-home page-id-${databaseId} wp-embed-responsive singular missing-post-thumbnail has-no-pagination not-showing-comments footer-top-visible customize-support`}
       >

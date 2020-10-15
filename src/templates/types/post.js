@@ -27,7 +27,9 @@ export default ({ data }) => {
 
   return (
     <>
-      <GatsbySeo title={title} description={excerpt} />
+      <GatsbySeo title={title}
+                 description={excerpt}
+                 titleTemplate={`%s | KerryJo Felder for Minneapolis School Board`} />
       <Layout
         bodyClass={`post-template-default single single-post postid-${databaseId} single-format-standard wp-embed-responsive singular has-post-thumbnail has-single-pagination showing-comments footer-top-visible customize-support`}
       >
