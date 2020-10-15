@@ -20,7 +20,7 @@ const Archive = (props) => {
 
   return (
     <Layout bodyClass="home blog wp-embed-responsive has-no-pagination showing-comments hide-avatars footer-top-visible customize-support">
-        <GatsbySeo title={title}
+        <GatsbySeo title="Latest From KerryJo"
                    description={excerpt}
                    titleTemplate={`%s | KerryJo Felder for Minneapolis School Board`} />
 

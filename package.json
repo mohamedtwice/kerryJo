@@ -33,6 +33,7 @@
     "gatsby-plugin-notifications": "^0.0.2",
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-sharp": "^2.6.35",
+    "gatsby-plugin-sitemap": "^2.4.17",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.2.4",
     "gatsby-source-wordpress-experimental": "^0.7.1",
