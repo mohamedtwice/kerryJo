@@ -92,7 +92,7 @@ export default ({ data }) => {
               <VolunteerForm />
             </>
             }
-            {title !== 'Get Involved' &&
+            {title !== 'Get Involved' && title !== 'Learn'
               <div className="allside">
                 <h4 className="signuph4">Get Involved</h4>
                 <Link className="btn btn-lar donatebtn" to="/donate/">Donate</Link>
