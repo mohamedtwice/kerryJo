@@ -224,7 +224,7 @@ const MenuModal = ({ isActive, toggleBackdrop }) => {
 
           <div className="menu-middle">
             <div className="headerdonatediv2">
-              <a className="headerdonatebtn2" href="/donate/">
+              <a className="headerdonatebtn2" href="https://givebutter.com/sJ2psY">
                 Donate
               </a>
             </div>

@@ -78,7 +78,7 @@ export default ({ data }) => {
 
           <div className="post-inner thin pf">
 
-          <div>
+            <div className="page-content">
             <div
               className="entry-content"
               dangerouslySetInnerHTML={{ __html: content }}
@@ -92,7 +92,7 @@ export default ({ data }) => {
               <VolunteerForm />
             </>
             }
-            {title !== 'Get Involved' && title !== 'Learn'
+            {title !== 'Get Involved' &&
               <div className="allside">
                 <h4 className="signuph4">Get Involved</h4>
                 <Link className="btn btn-lar donatebtn" to="/donate/">Donate</Link>

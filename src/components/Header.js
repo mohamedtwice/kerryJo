@@ -70,6 +70,11 @@ const Header = ({ pageContext, toggleBackdrop, ...props }) => {
 
             <div className="header-navigation-wrapper">
               <Menu />
+              <div className="headerdonatediv1">
+                <a className="headerdonatebtn1" href="https://givebutter.com/sJ2psY">
+                  Donate
+                </a>
+              </div>
             </div>
           </div>
           {/*<div className="header-toggles hide-no-js">*/}

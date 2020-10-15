@@ -8094,3 +8094,27 @@ display: flex;
 .blog-list .hentry {
   margin-bottom: 3rem;
 }
+
+.page-content {
+max-width: 65%;
+}
+
+.headerdonatediv1 {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  min-width: 120px;
+  margin-left: 15px;
+}
+
+.headerdonatebtn1 {
+  background: #fdcb00;
+  padding: 10px 20px;
+  font-size: 1.75rem;
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
