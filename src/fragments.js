@@ -32,7 +32,7 @@ export const fragments = graphql`
     title
     databaseId
     excerpt
-    date
+    date(formatString: "MMMM DD, YYYY")
     featuredImage {
       remoteFile {
         ...Thumbnail

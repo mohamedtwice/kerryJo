@@ -32,7 +32,8 @@ const PostPreview = ({ post, isLast }) => {
                           {/*<a href="javascript:;" rel="category tag">*/}
                           <HomePostCategories categories={post.categories} />
                           {/*</a>*/}
-                          <span className="blog-date">{moment(post.date).format(`M.d.YYYY`)}</span>
+                          {/*  <span className="blog-date">{moment(post.date).format(`M.d.YYYY`)}</span>*/}
+                          <span className="blog-date">{post.date}</span>
                         </span>
               <h3 className="entry-title mt-1">
                 <Link

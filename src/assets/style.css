@@ -7946,6 +7946,7 @@ display: flex;
 
 .entry-content figure.wp-block-image {
   margin-top: 0 !important;
+  width: calc(100% - 4rem);
 }
 
 .btn{
@@ -8117,4 +8118,30 @@ max-width: 65%;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.is-style-large {
+  background: #efefef;
+  width: calc(100% - 4rem);
+  padding: 25px!important;
+  margin-top: 0!important;
+  font-weight: 300 !important;
+}
+
+.wp-block-pullquote.is-style-solid-color {
+  background: #efefef;
+  padding: 40px;
+  margin-top: 0;
+}
+.wp-block-pullquote.is-style-solid-color blockquote p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 29px;
+  font-weight: 300;
+}
+.wp-block-pullquote.is-style-solid-color blockquote p {
+  margin-top: 0;
+  margin-bottom: 1.25em;
+  font-size: 29px;
+  font-weight: 300;
 }
