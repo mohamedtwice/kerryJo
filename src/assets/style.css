@@ -7781,7 +7781,14 @@ a.circle-icon:focus {
   margin: 0 !important;
 }
 
+.page-content {
+max-width: 100%;
+}
+
 @media (min-width: 768px) {
+.page-content {
+max-width: 65%;
+}
   .container-flex,
   .container-order,
   .flex-center-center {
@@ -8094,10 +8101,6 @@ display: flex;
 
 .blog-list .hentry {
   margin-bottom: 3rem;
-}
-
-.page-content {
-max-width: 65%;
 }
 
 .headerdonatediv1 {
